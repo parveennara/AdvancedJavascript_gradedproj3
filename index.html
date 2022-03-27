@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Speed Test App</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="flex_container">
+
+    <div>
+      <h1>Test your Typing Speed</h1>
+    </div>
+
+    <div class="header">
+      <div class="wpm">
+        <div class="heading">WPM</div>
+        <div class="wpm_actual">0</div>
+      </div>
+      <div class="cpm">
+        <div class="heading">CPM</div>
+        <div class="cpm_actual">0</div>
+      </div>
+      <div class="errors">
+        <div class="heading">ERRORS</div>
+        <div class="errors_actual">0</div>
+      </div>
+      <div class="time">
+        <div class="heading">TIME</div>
+        <div class="time_actual">60s</div>
+      </div>
+      <div class="accuracy">
+        <div class="heading">% ACCURACY</div>
+        <div class="accuracy_actual">100</div>
+      </div>
+    </div>
+
+    <div class="test_text">Click on the area below to start the game.</div>
+    <textarea class="input_area" placeholder="start typing here..." onfocus="startTest()"
+      oninput="checkInput()"></textarea>
+    <button class="restart_btn" onclick="restart()">Restart</button>
+  </div>
+  <script src="js/typing-test.js"></script>
+</body>
+
+</html>
